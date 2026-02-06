@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Send Media</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { font-family: Arial; padding: 20px; }
+input, textarea, button {
+  width: 100%; padding: 10px; margin: 8px 0;
+}
+button { background: green; color: white; border: none; }
+</style>
+</head>
+<body>
+
+<h2>📤 Photo / Video / Message Send</h2>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  
+  <input type="tel" name="mobile" placeholder="Mobile Number" required>
+
+  <input type="file" name="file">
+
+  <textarea name="message" placeholder="Message likhein"></textarea>
+
+  <button type="submit">Send to WhatsApp</button>
+</form>
+
+</body>
+</html>
